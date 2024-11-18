@@ -6,15 +6,17 @@ export type BigintIsh = JSBI | number | string
 export enum ChainId {
   // ETHEREUM = 1,
   // RINKEBY = 4,
-  ARBITRUM = 42161,
+  ARBITRUM_SEPOLIA = 421614,
   MAINNET = 250,
-  BSC = 56,
   BSC_TESTNET = 97,
 
   BASE = 8453,
   BASE_GOERLI = 84531,
   MINATO = 1946,
 
+  KAIA = 8217,
+  KAIROS = 1001,
+  FUJI = 43113,
 }
 
 export enum TradeType {
@@ -33,9 +35,13 @@ export const FACTORY_ADDRESS = '0xEF45d134b73241eDa7703fa787148D9C9F4950b0'
 export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = {
   [ChainId.MAINNET]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
+  [ChainId.ARBITRUM_SEPOLIA]: '0x501e03f804C53781Ee7e3c0115850268C9c65615',
   [ChainId.BASE_GOERLI]: '0x7C6C367ee607737d4297829cD2EA39eee4C98119',
   [ChainId.BASE]: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
   [ChainId.MINATO]: '0x1C929B974B48204DB9A385670F3029A4717D4e7A',
+  [ChainId.KAIA]: '',
+  [ChainId.KAIROS]: '',
+  [ChainId.FUJI]: '',
 }
 
 export const INIT_CODE_HASH = '0xb618a2730fae167f5f8ac7bd659dd8436d571872655bcb6fd11f2158c8a64a3b'
@@ -43,9 +49,13 @@ export const INIT_CODE_HASH = '0xb618a2730fae167f5f8ac7bd659dd8436d571872655bcb6
 export const INIT_CODE_HASH_MAP: { [chainId: number]: string } = {
   [ChainId.MAINNET]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
+  [ChainId.ARBITRUM_SEPOLIA]: '0x3d8ed8f77f3a34d2cadbca74785da1db4412674b0fd33cf2a4dd7bf06a3ab742',
   [ChainId.BASE_GOERLI]: '0xb618a2730fae167f5f8ac7bd659dd8436d571872655bcb6fd11f2158c8a64a3b',
   [ChainId.BASE]: '0xb618a2730fae167f5f8ac7bd659dd8436d571872655bcb6fd11f2158c8a64a3b',
   [ChainId.MINATO]: '0x887b3658c638203604a7c4149d6d115a5b218a492501a970c32ac67b8f276223',
+  [ChainId.KAIA]: '',
+  [ChainId.KAIROS]: '',
+  [ChainId.FUJI]: '',
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
