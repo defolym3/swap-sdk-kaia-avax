@@ -126,6 +126,46 @@ export const WBNB = {
     'Wrapped Ether',
     ''
   ),
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(
+    ChainId.ARBITRUM_SEPOLIA,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    ''
+  ),
+  [ChainId.MINATO]: new Token(
+    ChainId.MINATO,
+    '0xEE0A7E2100F4b98f549230E0e843041A96f018a9',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    ''
+  ),
+  [ChainId.KAIA]: new Token(
+    ChainId.KAIA,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    ''
+  ),
+  [ChainId.KAIROS]: new Token(
+    ChainId.KAIROS,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    ''
+  ),
+  [ChainId.FUJI]: new Token(
+    ChainId.FUJI,
+    '0xEE0A7E2100F4b98f549230E0e843041A96f018a9',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    ''
+  ),
 }
 
 export const WNATIVE = {
@@ -135,4 +175,10 @@ export const WNATIVE = {
   [ChainId.BSC_TESTNET]: WBNB[ChainId.BSC_TESTNET],
   [ChainId.BASE_GOERLI]: WBNB[ChainId.BASE_GOERLI],
   [ChainId.BASE]: WBNB[ChainId.BASE],
+  [ChainId.ARBITRUM_SEPOLIA]: WBNB[ChainId.ARBITRUM_SEPOLIA],
+  [ChainId.MINATO]: WBNB[ChainId.MINATO],
+  [ChainId.KAIA]: WBNB[ChainId.KAIA],
+  [ChainId.KAIROS]: WBNB[ChainId.KAIROS],
+  [ChainId.FUJI]: WBNB[ChainId.FUJI],
+
 }
